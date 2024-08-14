@@ -1,38 +1,169 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.notice {
   text-align: center;
+  width: 100%;
+  line-height: 30px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  line-height: 60px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 48px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.menu {
+  flex: 1;
+}
+
+.login {
+  flex: 1;
+}
+
+.slide {
+  max-width: 100%;
+}
+
+.featured {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 24px 48px;
+}
+
+.list {
+  font-size: 32px;
+  color: #4a4a4a;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.products img {
+  width: 100%;
+  height: 100%;
+}
+
+.product {
+  flex: 1;
+}
+
+.listName {
+  background-color: cadetblue;
+}
+
+.section {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0px 48px 24px;
+  margin-top: 1%;
+}
+
+.section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.productSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+
+.section3 {
+  margin-top: 1%;
+}
+
+.craft {
+  max-width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  padding: 50px 48px;
+}
+
+.craft-container {
+  margin: 0px 95px;
+  padding: 48px 0px;
+}
+
+.craft-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.craft-name {
+  color: white;
+  font-size: 32px;
+}
+
+.craft-detail {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.craft-detail p {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.craft-imgs {
+  display: flex;
+  padding: 1%;
+}
+
+.craft-imgs img {
+  width: 100%;
+  height: 100%;
+}
+
+.learn {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1%;
+}
+
+.learn-btn {
+  color: #4c4c4c;
+  background-color: white;
+}
+
+.bugatti img {
+  max-width: 100%;
+}
+
+.MandD {
+  display: flex;
+}
+
+.free {
+  display: flex;
+}
+
+.shipping {
+  flex: 1;
+}
+
+.returns {
+  flex: 1;
+}
+
+.protection {
+  flex: 1;
+}
+
+.support {
+  display: flex;
 }
