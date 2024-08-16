@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import slide1 from "./img/slide/slide1.jpg";
 import product1 from "./img/feature/MW09.png";
@@ -12,7 +10,6 @@ import section3 from "./img/feature/MW75Section.jpg";
 import craft1 from "./img/crafts/sound.jpg";
 import craft2 from "./img/crafts/materials.jpg";
 import craft3 from "./img/crafts/design.jpg";
-import bugatti from "./img/main/bugatti.jpg";
 import phone from "./img/main/phone.jpg";
 import earphone from "./img/main/earphone.jpg";
 import { ReactComponent as Logo } from "./img/svg/logo.svg";
@@ -20,22 +17,11 @@ import { ReactComponent as Search } from "./img/svg/search.svg";
 import { ReactComponent as Myinfo } from "./img/svg/myinfo.svg";
 import { ReactComponent as Cart } from "./img/svg/cart.svg";
 
-// document
-//   .getElementsByClassName("headphone")[0]
-//   .addEventListener("click", function () {
-//     document.getElementsByClassName("items")[0].classList.toggle("d-show");
-//   });
-// const [isShow, setShow] = useState("false");
-// const ToggleClass = () => {
-//   setShow(!isShow);
-// };
-
 function App() {
   return (
     <div>
       <div className="notice">
-        FREE US GROUND SHIPPING ON ORDERS OF $99 OR MORE. FREE GROUND SHIPPING
-        IN CANADA ON ORDERS OF $250 OR MORE
+        FREE US GROUND SHIPPING ON ORDERS OF $99 OR MORE. FREE GROUND SHIPPING IN CANADA ON ORDERS OF $250 OR MORE
       </div>
       <div className="navbar">
         <div className="logo">
@@ -84,9 +70,7 @@ function App() {
                 <div className="goods-name">MW09</div>
                 <div className="goods-price">From $349.00</div>
               </div>
-              <div className="goods-detail">
-                Active Noise-Cancelling True Wireless Earphones
-              </div>
+              <div className="goods-detail">Active Noise-Cancelling True Wireless Earphones</div>
               <div></div>
             </div>
           </div>
@@ -97,9 +81,7 @@ function App() {
                 <div className="goods-name">MW75</div>
                 <div className="goods-price">$599.00</div>
               </div>
-              <div className="goods-detail">
-                Active Noise-Cancelling Wireless Headphones
-              </div>
+              <div className="goods-detail">Active Noise-Cancelling Wireless Headphones</div>
               <div></div>
             </div>
           </div>
@@ -110,9 +92,7 @@ function App() {
                 <div className="goods-name">MH40 wireless</div>
                 <div className="goods-price">$399.00</div>
               </div>
-              <div className="goods-detail">
-                Active Noise-Cancelling Wireless Headphones
-              </div>
+              <div className="goods-detail">Active Noise-Cancelling Wireless Headphones</div>
               <div></div>
             </div>
           </div>
@@ -184,9 +164,8 @@ function App() {
         <div>
           <div>Get The Most Out Of Your Sound with M&D Connect</div>
           <div>
-            The M&D Connect App lets you download firmware updates, adjust
-            settings, and change default preferences for your headset, all from
-            your mobile device
+            The M&D Connect App lets you download firmware updates, adjust settings, and change default preferences for
+            your headset, all from your mobile device
           </div>
           <div>Learn More</div>
         </div>
@@ -197,23 +176,17 @@ function App() {
       <div className="free">
         <div className="shipping">
           <div>Free Premium Shipping</div>
-          <div>
-            Free ground shipping on orders of $99 or more in the U.S. and $250
-            in Canada
-          </div>
+          <div>Free ground shipping on orders of $99 or more in the U.S. and $250 in Canada</div>
         </div>
         <div className="returns">
           <div>Free Returns in 14 Days</div>
-          <div>
-            We offer a generous 14-day return policy, allowing you to shop with
-            confidence
-          </div>
+          <div>We offer a generous 14-day return policy, allowing you to shop with confidence</div>
         </div>
         <div className="protection">
           <div>Product Protection</div>
           <div>
-            Rest easy with our manufacturer warranty, ensuring that your product
-            is protected against any manufacturing defects or issues
+            Rest easy with our manufacturer warranty, ensuring that your product is protected against any manufacturing
+            defects or issues
           </div>
         </div>
       </div>
@@ -222,13 +195,8 @@ function App() {
           <img src={earphone} alt="" />
         </div>
         <div className="support-center">
-          <div>
-            Need support? We're here to assist you every step of the way
-          </div>
-          <div>
-            Access product support and frequently asked questions in our Support
-            Center
-          </div>
+          <div>Need support? We're here to assist you every step of the way</div>
+          <div>Access product support and frequently asked questions in our Support Center</div>
           <button>Support Center</button>
         </div>
       </div>
@@ -240,8 +208,8 @@ function App() {
             <div>
               <input type="checkbox" name="" id="" />
               <div>
-                By checking this box you are agreeing to receive brand updates,
-                promotions and content from Master & Dynamic.
+                By checking this box you are agreeing to receive brand updates, promotions and content from Master &
+                Dynamic.
               </div>
             </div>
             <button>SUBMIT</button>
@@ -278,8 +246,8 @@ function App() {
             </div>
             <div>
               <p>
-                Designed and developed in New York City. P.O Box 20257 Greeley
-                Square Station 4 East 27th street New York, NY 10001
+                Designed and developed in New York City. P.O Box 20257 Greeley Square Station 4 East 27th street New
+                York, NY 10001
               </p>
               <p>© 2024. All Rights Reserved.</p>
             </div>
