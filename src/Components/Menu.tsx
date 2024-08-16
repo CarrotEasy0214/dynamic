@@ -4,11 +4,6 @@ import { ReactComponent as Myinfo } from "../img/svg/myinfo.svg";
 import { ReactComponent as Cart } from "../img/svg/cart.svg";
 
 function Menu() {
-  () => {
-    document.getElementsByClassName("headphone")[0].addEventListener("click", function () {
-      document.getElementsByClassName("items")[0].classList.toggle("d-show");
-    });
-  };
   return (
     <div>
       <div className="navbar">
