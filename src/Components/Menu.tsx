@@ -6,7 +6,7 @@ import Dropdown from "./Drop";
 
 function Menu() {
   return (
-    <div>
+    <div className="sticky">
       <div className="navbar">
         <div className="logo">
           <Logo className="master"></Logo>

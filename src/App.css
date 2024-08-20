@@ -29,10 +29,17 @@ img {
   font-weight: bold;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .navbar {
+  width: 100%;
   line-height: 60px;
   display: flex;
-  position: sticky;
+  background-color: white;
 }
 
 .logo {
