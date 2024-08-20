@@ -32,6 +32,7 @@ img {
 .navbar {
   line-height: 60px;
   display: flex;
+  position: sticky;
 }
 
 .logo {
