@@ -8,6 +8,8 @@
 
 ## 프로젝트 진행상황
 
+- 깃허브주소 : [GitHub](https://github.com/CarrotEasy0214/dynamic)
+
 #### 24년 08월 09일
 
 - 인스턴스 만들어서 Github Action 적용완료
