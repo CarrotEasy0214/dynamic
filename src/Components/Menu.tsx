@@ -1,92 +1,99 @@
+import React, { useState, useCallback } from "react";
 import { ReactComponent as Logo } from "../img/svg/logo.svg";
 import { ReactComponent as Search } from "../img/svg/search.svg";
 import { ReactComponent as Myinfo } from "../img/svg/myinfo.svg";
 import { ReactComponent as Cart } from "../img/svg/cart.svg";
 import downArrow from "../img/svg/dropDown.svg";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Menu() {
+const Menu: React.FC = () => {
+  const [isToggled, setIsToggled] = useState(false);
+
+  const toggleMenu = useCallback(() => {
+    setIsToggled((prev) => !prev);
+  }, []);
+
   return (
-    <div className="sticky top-0 z-50">
-      <div className="w-full h-full flex bg-white py-2">
-        <div className="flex flex-1 pl-10">
-          <Logo className="cursor-pointer"></Logo>
+    <div className="sticky top-0 z-50 bg-white w-full">
+      <div className="flex justify-between items-center p-4 bg-white">
+        <div
+          className="md:hidden cursor-pointer absolute left-4"
+          onClick={toggleMenu}
+          aria-expanded={isToggled}
+        >
+          <FontAwesomeIcon icon={faBars} size="lg" />
         </div>
-        <div className="flex flex-3 items-center gap-8 tracking-tight">
-          <div className="flex cursor-pointer text-sm text-gray-500 font-bold gap-1">
+        <div className="flex-1 flex justify-center">
+          <Logo className="cursor-pointer" />
+        </div>
+        <div
+          className={`md:flex gap-8 items-center ${
+            isToggled
+              ? "flex flex-col w-full bg-white absolute top-16 left-0 p-4"
+              : "hidden"
+          } md:relative md:flex-row`}
+        >
+          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>HEADPHONES</p>
             <img
               src={downArrow}
-              alt=""
+              alt="Dropdown arrow"
               className="w-3 flex justufy-center pt-0.5"
             />
           </div>
-          <div className="flex cursor-pointer text-sm text-gray-500 font-bold gap-1">
+          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>EARPHONES</p>
             <img
               src={downArrow}
-              alt=""
+              alt="Dropdown arrow"
               className="w-3 flex justufy-center pt-0.5"
             />
           </div>
-          <div className="flex cursor-pointer text-sm text-gray-500 font-bold gap-1">
+          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>ACCESSORIES</p>
             <img
               src={downArrow}
-              alt=""
+              alt="Dropdown arrow"
               className="w-3 flex justufy-center pt-0.5"
             />
           </div>
-          <div className="flex cursor-pointer text-sm text-gray-500 font-bold gap-1">
+          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>COLLABORATIONS</p>
             <img
               src={downArrow}
-              alt=""
+              alt="Dropdown arrow"
               className="w-3 flex justufy-center pt-0.5"
             />
           </div>
-          <div className="flex cursor-pointer text-sm text-gray-500 font-bold gap-1">
+          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>BLOG</p>
             <img
               src={downArrow}
-              alt=""
+              alt="Dropdown arrow"
               className="w-3 flex justufy-center pt-0.5"
             />
           </div>
         </div>
-        <div className="flex flex-1 justify-center items-center gap-3">
-          <div>
-            <Search className="cursor-pointer"></Search>
-          </div>
-          <div>
-            <Myinfo className="cursor-pointer"></Myinfo>
-          </div>
-          <div>
-            <Cart className="cursor-pointer"></Cart>
-          </div>
-          <div className="flex cursor-pointer text-sm text-gray-500 font-bold gap-1">
+        <div className="flex-1 flex justify-center md:justify-end gap-4 items-center">
+          <Search className="cursor-pointer" />
+          <Myinfo className="cursor-pointer" />
+          <Cart className="cursor-pointer" />
+          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>US</p>
             <img
               src={downArrow}
-              alt=""
+              alt="Dropdown arrow"
               className="w-3 flex justufy-center pt-0.5"
             />
           </div>
-          <div>
-            <button className="bg-slate-900 text-white text-sm font-bold px-6 py-2.5">
-              Support
-            </button>
-          </div>
+          <button className="bg-slate-900 text-white text-sm font-bold px-6 py-2.5">
+            Support
+          </button>
         </div>
-      </div>
-      <div>
-        {/* <div className="d-none items">헤드폰나옴</div>
-        <div className="d-none items">이어폰나옴</div>
-        <div className="d-none items">액세서리나옴</div>
-        <div className="d-none items">콜라보나옴</div>
-        <div className="d-none items">블로그나옴</div> */}
       </div>
     </div>
   );
-}
+};
 
 export default Menu;
