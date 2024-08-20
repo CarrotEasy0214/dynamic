@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import BlackContainer from "./Components/BlackContainer";
 import Card from "./Components/Card";
 import Collabo from "./Components/Collabo";

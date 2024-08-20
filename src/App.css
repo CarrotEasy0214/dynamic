@@ -6,7 +6,7 @@
 img {
   object-fit: contain;
 }
-
+/* 
 .d-flex {
   display: flex;
 }
@@ -17,9 +17,9 @@ img {
 
 .d-show {
   display: block;
-}
+} */
 
-.notice {
+/* .notice {
   text-align: center;
   width: 100%;
   line-height: 30px;
@@ -27,59 +27,59 @@ img {
   color: white;
   font-size: 12px;
   font-weight: bold;
-}
+} */
 
-.sticky {
+/* .sticky {
   position: sticky;
   top: 0;
   z-index: 100;
-}
+} */
 
-.navbar {
+/* .navbar {
   width: 100%;
   line-height: 60px;
   display: flex;
   background-color: white;
-}
+} */
 
-.logo {
+/* .logo {
   flex: 1;
   display: flex;
   justify-content: center;
-}
+} */
 
-.menu {
+/* .menu {
   flex: 2;
   justify-content: space-between;
-}
+} */
 
-.menu button {
+/* .menu button {
   border: none;
   background-color: white;
   cursor: pointer;
-}
+} */
 
-.login {
+/* .login {
   flex: 1;
   display: flex;
   justify-content: center;
   gap: 5%;
-}
+} */
 
-.login button {
+/* .login button {
   border: none;
   background-color: #1a1a1a;
   color: white;
   padding: 25% 35%;
   font-size: 14px;
   font-weight: bold;
-}
+} */
 
-.icon {
+/* .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .slide {
   max-width: 100%;
