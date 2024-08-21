@@ -25,7 +25,7 @@ const Menu: React.FC = () => {
           <FontAwesomeIcon icon={faBars} size="lg" className="ml-1" />
           <Search className="cursor-pointer block md:hidden ml-2" />
         </div>
-        <div className="flex justify-center ml-20 pl-20 md:flex-2">
+        <div className="flex justify-center md:ml-20 md:pl-20 md:flex-2">
           <Logo className="cursor-pointer" />
         </div>
         <div
