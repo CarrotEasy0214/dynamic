@@ -10,7 +10,7 @@ import Notice from "./Components/Notice";
 import ProductPage from "./Components/ProductPage";
 import ShippingDetail from "./Components/ShippingDetail";
 import Slide from "./Components/Slide";
-import Slide2 from "./Components/Slide2";
+// import Slide2 from "./Components/Slide2";
 import SupportCenter from "./Components/SupportCenter";
 
 function App() {
