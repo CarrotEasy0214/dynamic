@@ -16,7 +16,7 @@ const Menu: React.FC = () => {
 
   return (
     <div className="sticky top-0 z-50 bg-white w-full">
-      <div className="flex justify-between py-3">
+      <div className="flex flex-1 justify-between py-3">
         <div
           className="flex justify-center items-center cursor-pointer md:hidden"
           onClick={toggleMenu}
@@ -26,38 +26,36 @@ const Menu: React.FC = () => {
           <Search className="cursor-pointer block md:hidden ml-2" />
         </div>
         <div className="flex justify-center md:ml-20 md:pl-20 md:flex-2">
-          <Logo className="cursor-pointer" />
+          <Logo className="cursor-pointer w-10" />
         </div>
         <div
-          className={`md:flex md:flex-2 gap-8 items-center ${
+          className={`md:flex md:flex-1 gap-7 items-center justify-center ${
             isToggled ? "flex flex-col w-full bg-white absolute top-16 left-0 p-4" : "hidden"
           }`}
         >
-          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
+          <div className="flex items-center gap-1 cursor-pointer font-bold text-sm text-gray-600">
             <p>HEADPHONES</p>
             <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
-          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
+          <div className="flex items-center gap-1 cursor-pointer font-bold text-sm text-gray-600">
             <p>EARPHONES</p>
             <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
-          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
+          <div className="flex items-center gap-1 cursor-pointer font-bold text-sm text-gray-600">
             <p>ACCESSORIES</p>
             <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
-          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
+          <div className="flex items-center cursor-pointer font-bold text-sm text-gray-600">
             <p>COLLABORATIONS</p>
-            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
-          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
+          <div className="flex items-center cursor-pointer font-bold text-sm text-gray-600">
             <p>BLOG</p>
-            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
         </div>
-        <div className="flex-2 flex justify-end gap-4 items-center">
+        <div className="md:flex-2 md:justify-end md:mr-20 md:pr-20 flex justify-center gap-4 items-center">
           <Search className="cursor-pointer hidden md:block" />
           <Myinfo className="cursor-pointer" />
-          <Cart className="cursor-pointer" />
+          <Cart className="cursor-pointer mr-1" />
           <div className="md:flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600 hidden md:block">
             <p>US</p>
             <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
