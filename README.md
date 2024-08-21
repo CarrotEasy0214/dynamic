@@ -34,9 +34,15 @@
 - 분석주소 : [블로그](https://aaa0214.tistory.com/5)
 - 24년 08월 20일 : 분석글 재정리필요
 
-#### 24sus 08월 20일
+#### 24년 08월 20일
 
 - 교수님 피드백 : TailwindCss 적용 & NavBar 수정(Sticky,반응형으로 햄버거만들기)
+- TailwindCss 적용
+- NavBar Position:Sticky 사용하여 상단 고정
+
+#### 24년 08월 21일
+
+- 반응형 NavBar 적용
 
 ## EC2 주소
 

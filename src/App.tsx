@@ -3,6 +3,7 @@ import BlackContainer from "./Components/BlackContainer";
 import Card from "./Components/Card";
 import Collabo from "./Components/Collabo";
 import CompanyGuide from "./Components/CompanyGuide";
+// import Test from "./Components/example/Test";
 import MandD from "./Components/MandD";
 import Menu from "./Components/Menu";
 import Notice from "./Components/Notice";
@@ -14,6 +15,7 @@ import SupportCenter from "./Components/SupportCenter";
 function App() {
   return (
     <div>
+      {/* <Test></Test> */}
       <Notice></Notice>
       <Menu></Menu>
       <Slide></Slide>

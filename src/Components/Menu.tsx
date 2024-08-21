@@ -16,80 +16,53 @@ const Menu: React.FC = () => {
 
   return (
     <div className="sticky top-0 z-50 bg-white w-full">
-      <div className="flex justify-between items-center p-4 bg-white">
+      <div className="flex justify-between py-3">
         <div
-          className="md:hidden cursor-pointer absolute left-4"
+          className="flex justify-center items-center cursor-pointer md:hidden"
           onClick={toggleMenu}
           aria-expanded={isToggled}
         >
-          <FontAwesomeIcon icon={faBars} size="lg" />
+          <FontAwesomeIcon icon={faBars} size="lg" className="ml-1" />
+          <Search className="cursor-pointer block md:hidden ml-2" />
         </div>
-        <div className="flex-1 flex justify-center">
+        <div className="flex justify-center ml-20 pl-20 md:flex-2">
           <Logo className="cursor-pointer" />
         </div>
         <div
-          className={`md:flex gap-8 items-center ${
-            isToggled
-              ? "flex flex-col w-full bg-white absolute top-16 left-0 p-4"
-              : "hidden"
-          } md:relative md:flex-row`}
+          className={`md:flex md:flex-2 gap-8 items-center ${
+            isToggled ? "flex flex-col w-full bg-white absolute top-16 left-0 p-4" : "hidden"
+          }`}
         >
           <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>HEADPHONES</p>
-            <img
-              src={downArrow}
-              alt="Dropdown arrow"
-              className="w-3 flex justufy-center pt-0.5"
-            />
+            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
           <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>EARPHONES</p>
-            <img
-              src={downArrow}
-              alt="Dropdown arrow"
-              className="w-3 flex justufy-center pt-0.5"
-            />
+            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
           <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>ACCESSORIES</p>
-            <img
-              src={downArrow}
-              alt="Dropdown arrow"
-              className="w-3 flex justufy-center pt-0.5"
-            />
+            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
           <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>COLLABORATIONS</p>
-            <img
-              src={downArrow}
-              alt="Dropdown arrow"
-              className="w-3 flex justufy-center pt-0.5"
-            />
+            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
           <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
             <p>BLOG</p>
-            <img
-              src={downArrow}
-              alt="Dropdown arrow"
-              className="w-3 flex justufy-center pt-0.5"
-            />
+            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
         </div>
-        <div className="flex-1 flex justify-center md:justify-end gap-4 items-center">
-          <Search className="cursor-pointer" />
+        <div className="flex-2 flex justify-end gap-4 items-center">
+          <Search className="cursor-pointer hidden md:block" />
           <Myinfo className="cursor-pointer" />
           <Cart className="cursor-pointer" />
-          <div className="flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600">
+          <div className="md:flex items-center gap-2 cursor-pointer font-bold text-sm text-gray-600 hidden md:block">
             <p>US</p>
-            <img
-              src={downArrow}
-              alt="Dropdown arrow"
-              className="w-3 flex justufy-center pt-0.5"
-            />
+            <img src={downArrow} alt="Dropdown arrow" className="w-3 flex justufy-center pt-0.5" />
           </div>
-          <button className="bg-slate-900 text-white text-sm font-bold px-6 py-2.5">
-            Support
-          </button>
+          <button className="bg-slate-900 text-white text-sm font-bold px-6 py-2.5 hidden md:block">Support</button>
         </div>
       </div>
     </div>
