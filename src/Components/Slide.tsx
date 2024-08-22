@@ -10,6 +10,13 @@ import slide4 from "../img/slide/slide4.jpg";
 import Handler from "./Handler";
 
 const Slide = () => {
+  // const pagination = {
+  //   clickable: true,
+  //   renderBullet: function (className: any) {
+  //     return '<span class="' + className + ' bg-black w-10 h-10"></span>';
+  //   },
+  // };
+
   return (
     <Swiper
       // effect={"fade"}
@@ -18,10 +25,7 @@ const Slide = () => {
       direction={"horizontal"}
       loop={true}
       navigation={true}
-      pagination={{
-        bulletElement: "bullets",
-        clickable: true,
-      }}
+      // pagination={pagination}
       autoplay={{ delay: 1000, stopOnLastSlide: false }}
       modules={[Autoplay, Pagination, Navigation, EffectFade]}
     >

@@ -52,7 +52,7 @@ const Menu = () => {
             <p>BLOG</p>
           </div>
         </div>
-        <div className="xxl:mr-20 xxl:pr-20 flex justify-center gap-4 items-center pr-10">
+        <div className="xxl:mr-20 xxl:pr-20 flex justify-center gap-4 items-center pr-1">
           <Search className="cursor-pointer hidden ms:block" />
           <Myinfo className="cursor-pointer" />
           <Cart className="cursor-pointer mr-1" />
