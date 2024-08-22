@@ -9,11 +9,8 @@ const Handler = (): JSX.Element => {
     setRunning(swiper.autoplay.paused ? "시작" : "멈춤");
   }, [swiper.autoplay]);
   return (
-    <div className="flex justify-end relative top-[-2rem] z-50 pr-5">
-      <div
-        onClick={autoPlayer}
-        className="w-10 bg-white text-black text-center"
-      >
+    <div className="flex justify-end relative top-[-5.3rem] z-50 pr-5">
+      <div onClick={autoPlayer} className="w-10 bg-white text-black text-center">
         {runinng}
       </div>
     </div>

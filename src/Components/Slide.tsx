@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+// import { PaginationOptions } from "swiper/types";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
 import slide1 from "../img/slide/slide1.jpg";
@@ -10,12 +11,15 @@ import slide4 from "../img/slide/slide4.jpg";
 import Handler from "./Handler";
 
 const Slide = () => {
-  // const pagination = {
-  //   clickable: true,
-  //   renderBullet: function (className: any) {
-  //     return '<span class="' + className + ' bg-black w-10 h-10"></span>';
-  //   },
-  // };
+  const pagination = {
+    // clickable: true,
+    // renderBullet: function (index: number, className: string) {
+    //   console.log(className);
+    //   return '<span class="' + className + '"></span>';
+    // },
+    bulletClass: "w-4 h-4 rounded-lg bg-black inline-block",
+    bulletActiveClass: "bg-red-500 w-20",
+  };
 
   return (
     <Swiper
@@ -25,7 +29,13 @@ const Slide = () => {
       direction={"horizontal"}
       loop={true}
       navigation={true}
-      // pagination={pagination}
+      pagination={
+        pagination
+        //   {
+        //   bulletElement: "bullets",
+        //   clickable: true,
+        // }
+      }
       autoplay={{ delay: 1000, stopOnLastSlide: false }}
       modules={[Autoplay, Pagination, Navigation, EffectFade]}
     >
