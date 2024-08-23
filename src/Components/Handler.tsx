@@ -3,7 +3,7 @@ import { useSwiper } from "swiper/react";
 // import Play from "./Play";
 // import Pause from "./Pause";
 import Play from "../img/svg/playbtn.svg";
-import Pause from "../img/svg/pausebtn.svg";
+// import Pause from "../img/svg/pausebtn.svg";
 
 const Handler = (): JSX.Element => {
   const swiper = useSwiper();
