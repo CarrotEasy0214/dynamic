@@ -34,73 +34,74 @@ const Slide = () => {
       modules={[Autoplay, Pagination, Navigation, EffectFade, Parallax]}
     >
       <SwiperSlide>
-        <div
-          className="absolute top-[75%] left-[8%] text-white xl:text-6xl lg:text-5xl font-bold text-4xl"
-          data-swiper-parallax="-300"
-        >
-          MW09 True Wireless Earphones
+        <div className="absolute bottom-[7%] left-[4%]">
+          <div
+            className="text-white xl:text-6xl lg:text-5xl font-bold text-4xl pb-5 text-start"
+            data-swiper-parallax="-300"
+          >
+            MW09 True Wireless Earphones
+          </div>
+          <div className="text-white text-start pb-5" data-swiper-parallax="-200">
+            Our newest active noise-cancelling earphones
+          </div>
+          <div
+            className="bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
+            data-swiper-parallax="-100"
+          >
+            Show Now
+          </div>
         </div>
-        <div className="absolute top-[83%] left-[8%] text-white" data-swiper-parallax="-200">
-          Our newest active noise-cancelling earphones
-        </div>
-        <div
-          className="absolute top-[89%] left-[8%] bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
-          data-swiper-parallax="-100"
-        >
-          Show Now
-        </div>
+
         <img src={slide1} alt="" className="slide" />
       </SwiperSlide>
       <SwiperSlide>
-        <div
-          className="absolute top-[68%] left-[8%] text-white text-6xl font-medium text-start"
-          data-swiper-parallax="-300"
-        >
-          <p>MG20 Wireless Gaming</p>
-          <p>Headphones</p>
-        </div>
-        <div className="absolute top-[83%] left-[8%] text-white" data-swiper-parallax="-200">
-          Never Play the Same
-        </div>
-        <div
-          className="absolute top-[89%] left-[8%] bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
-          data-swiper-parallax="-100"
-        >
-          Show Now
+        <div className="absolute bottom-[8.5%] left-[2.5%] w-[50%]">
+          <div className="text-white text-6xl font-medium text-start pb-5" data-swiper-parallax="-300">
+            MG20 Wireless Gaming Headphones
+          </div>
+          <div className="text-white text-start pb-5" data-swiper-parallax="-200">
+            Never Play the Same
+          </div>
+          <div
+            className="bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
+            data-swiper-parallax="-100"
+          >
+            Show Now
+          </div>
         </div>
         <img src={slide2} alt="" className="slide" />
       </SwiperSlide>
       <SwiperSlide>
-        <div
-          className="absolute top-[68%] left-[8%] text-white text-6xl font-medium text-start"
-          data-swiper-parallax="-300"
-        >
-          <p>MW75 Active Noise-Cancelling</p>
-          <p>Wireless Headphones</p>
-        </div>
-        <div className="absolute top-[83%] left-[8%] text-white" data-swiper-parallax="-200">
-          Perfect silence, perfect sound
-        </div>
-        <div
-          className="absolute top-[89%] left-[8%] bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
-          data-swiper-parallax="-100"
-        >
-          Show Now
+        <div className="absolute bottom-[7%] left-[4%] w-[60%]">
+          <div className="text-white text-5xl font-bold text-start pb-5" data-swiper-parallax="-300">
+            MW75 Active Noise-Cancelling Wireless Headphones
+          </div>
+          <div className="text-white text-start pb-5" data-swiper-parallax="-200">
+            Perfect silence, perfect sound
+          </div>
+          <div
+            className="bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
+            data-swiper-parallax="-100"
+          >
+            Show Now
+          </div>
         </div>
         <img src={slide3} alt="" className="slide" />
       </SwiperSlide>
       <SwiperSlide>
-        <div className="absolute top-[75%] left-[8%] text-white text-5xl font-bold" data-swiper-parallax="-300">
-          MH40 Wireless Headphones
-        </div>
-        <div className="absolute top-[83%] left-[8%] text-white" data-swiper-parallax="-200">
-          Iconic design and brilliant acoustics
-        </div>
-        <div
-          className="absolute top-[89%] left-[8%] bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
-          data-swiper-parallax="-100"
-        >
-          Show Now
+        <div className="absolute bottom-[7%] left-[5%]">
+          <div className="text-white text-5xl font-bold pb-5 text-start" data-swiper-parallax="-300">
+            MH40 Wireless Headphones
+          </div>
+          <div className="text-white text-start pb-5" data-swiper-parallax="-200">
+            Iconic design and brilliant acoustics
+          </div>
+          <div
+            className="bg-white w-[8.5rem] h-[3.5rem] flex justify-center text-sm font-bold cursor-pointer text-center items-center"
+            data-swiper-parallax="-100"
+          >
+            Show Now
+          </div>
         </div>
         <img src={slide4} alt="" className="slide" />
       </SwiperSlide>
