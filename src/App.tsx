@@ -10,6 +10,7 @@ import Notice from "./Components/Notice";
 import ProductPage from "./Components/ProductPage";
 import ShippingDetail from "./Components/ShippingDetail";
 import Slide from "./Components/Slide";
+import Slide3 from "./Components/Slide3";
 // import Slide2 from "./Components/Slide2";
 import SupportCenter from "./Components/SupportCenter";
 
@@ -20,15 +21,15 @@ function App() {
       {/* <Slide2></Slide2> */}
       <Notice></Notice>
       <Menu></Menu>
-      <Slide></Slide>
-      <ProductPage></ProductPage>
+      <Slide3></Slide3>
+      {/* <ProductPage></ProductPage>
       <Card></Card>
       <CompanyGuide></CompanyGuide>
       <Collabo></Collabo>
       <MandD></MandD>
       <ShippingDetail></ShippingDetail>
       <SupportCenter></SupportCenter>
-      <BlackContainer></BlackContainer>
+      <BlackContainer></BlackContainer> */}
     </div>
   );
 }
