@@ -18,11 +18,11 @@ const Menu = () => {
     <div className="sticky top-0 z-40 bg-white w-full">
       <div className="flex justify-between py-2.5">
         <div
-          className="flex justify-center items-center cursor-pointer md:hidden"
+          className="flex justify-start items-center cursor-pointer md:hidden"
           onClick={toggleMenu}
           aria-expanded={isToggled}
         >
-          <FontAwesomeIcon icon={faBars} size="lg" className="ml-4 ms:ml-6 lg:ml-10" />
+          <FontAwesomeIcon icon={faBars} size="lg" className="" />
           <Search className="cursor-pointer block ms:hidden ml-2" />
         </div>
         <div className="flex justify-center w-[10rem] mm:w-[30rem]">
