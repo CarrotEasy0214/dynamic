@@ -4,7 +4,7 @@ import "swiper/swiper-bundle.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import { Navigation, Pagination, Autoplay, EffectFade, Parallax } from "swiper/modules";
+import { Pagination, Autoplay, EffectFade, Parallax } from "swiper/modules";
 
 import slide1 from "../img/slide/slide1.jpg";
 import slide2 from "../img/slide/slide2.jpg";
@@ -51,7 +51,7 @@ const MySwiper = () => {
         pagination={{
           bulletClass: "w-2 h-2 rounded-lg bg-slate-500 inline-block relative mr-4 bottom-10 cursor-pointer z-50",
           bulletActiveClass: "!bg-white w-5",
-          horizontalClass: "!absolute" + "!bg-black",
+          horizontalClass: "!absolute",
           // el: ".swiper-pagination-custom",
           clickable: true,
           type: "bullets",
