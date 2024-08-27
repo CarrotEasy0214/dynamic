@@ -49,15 +49,15 @@ const MySwiper = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          bulletClass: "w-2 h-2 rounded-lg bg-slate-500 inline-block relative mr-4 bottom-10 cursor-pointer z-50",
+          bulletClass:
+            "w-2 h-2 rounded-lg bg-slate-500 inline-block relative mr-5 right-10 top-1 ms:top-0 ms:right-20 cursor-pointer z-50",
           bulletActiveClass: "!bg-white w-5",
-          horizontalClass: "!absolute",
-          // el: ".swiper-pagination-custom",
           clickable: true,
-          type: "bullets",
-          // renderBullet: function (index: any, className: string) {
-          //   return '<div class="flex justify-end pr-5"><span class="' + className + '"></span><div/ >';
-          // },
+          el: ".swiper-pagination",
+          renderBullet: function (index: any, className: string) {
+            // return '<div class="flex justify-end pr-5"><span class="' + className + '"></span><div/ >';
+            return '<span class="' + className + '"></span>';
+          },
         }}
         className="w-full relative"
       >
@@ -121,7 +121,7 @@ const MySwiper = () => {
             <img src={slide4} alt="" className="block" />
           </picture>
         </SwiperSlide>
-        <div className="w-10 h-10 absolute z-50 bottom-[4.5%] right-[2%]">
+        <div className="w-10 h-10 absolute z-50 bottom-[4.5%] right-[1%] ms:right-[2%]">
           <button onClick={toggleAutoplay}>
             {isPlaying ? (
               <img src={PauseBtn} alt="" className="w-10 h-10" /> // 정지 아이콘
@@ -131,6 +131,7 @@ const MySwiper = () => {
           </button>
         </div>
       </Swiper>
+      <div className="swiper-pagination !absolute !bottom-[6%] !text-right ms:bottom-[7%]"></div>
     </div>
   );
 };
