@@ -35,11 +35,11 @@ const MySwiper = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative mb-8">
       <Swiper
         ref={swiperRef}
         modules={[Pagination, Autoplay, EffectFade, Parallax]}
-        direction={"horizontal"}
+        // direction={"horizontal"}
         centeredSlides={true}
         loop={true}
         parallax={true}
@@ -49,8 +49,7 @@ const MySwiper = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          bulletClass:
-            "w-2 h-2 rounded-lg bg-slate-500 inline-block relative mr-5 right-10 top-1 ms:top-0 ms:right-20 cursor-pointer z-50",
+          bulletClass: "w-2 h-2 rounded-lg bg-slate-500 inline-block relative mr-4 xl:mr-5 cursor-pointer",
           bulletActiveClass: "!bg-white w-5",
           clickable: true,
           el: ".swiper-pagination",
@@ -121,7 +120,7 @@ const MySwiper = () => {
             <img src={slide4} alt="" className="block" />
           </picture>
         </SwiperSlide>
-        <div className="w-10 h-10 absolute z-50 bottom-[4.5%] right-[1%] ms:right-[2%]">
+        <div className="w-8 h-8 xl:w-10 xl:h-10 absolute z-50 bottom-[3%] ms:bottom-[2.5%] xl:bottom-[2%] right-[1.3%] ms:right-[1.5%] xl:right-[2%]">
           <button onClick={toggleAutoplay}>
             {isPlaying ? (
               <img src={PauseBtn} alt="" className="w-10 h-10" /> // 정지 아이콘
@@ -131,7 +130,7 @@ const MySwiper = () => {
           </button>
         </div>
       </Swiper>
-      <div className="swiper-pagination !absolute !bottom-[6%] !text-right ms:bottom-[7%]"></div>
+      <div className="swiper-pagination !absolute !bottom-[4%] ms:bottom-[6%] xl:bottom-[7.5%] flex justify-end !w-fit right-[9%] ms:right-[6%] xl:right-[5%] !left-auto"></div>
     </div>
   );
 };
