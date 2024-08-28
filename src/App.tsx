@@ -6,7 +6,7 @@ import ProductPage from "./Components/ProductPage";
 import Card from "./Components/Card";
 // import CompanyGuide from "./Components/CompanyGuide";
 import Collabo from "./Components/Collabo";
-import MandD from "./Components/MandD";
+// import MandD from "./Components/MandD";
 // import ShippingDetail from "./Components/ShippingDetail";
 // import SupportCenter from "./Components/SupportCenter";
 // import BlackContainer from "./Components/BlackContainer";
