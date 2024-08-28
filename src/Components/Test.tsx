@@ -28,6 +28,7 @@ const Item = ({
       <div>
         <img
           src={isListHover ? hImage : image}
+          alt=""
           onMouseOver={() => setIsListHover(true)}
           onMouseOut={() => setIsListHover(false)}
         />
