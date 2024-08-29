@@ -18,7 +18,7 @@ import MobileImg2 from "../img/slide/MG20_Mobile.webp";
 import MobileImg3 from "../img/slide/MG75_Mobile.webp";
 import MobileImg4 from "../img/slide/MH40W_Mobile.webp";
 
-const MySwiper = () => {
+const MySlide = () => {
   const swiperRef = useRef<any>(null);
 
   const [isPlaying, setIsPlaying] = useState(true);
@@ -135,4 +135,4 @@ const MySwiper = () => {
   );
 };
 
-export default MySwiper;
+export default MySlide;
