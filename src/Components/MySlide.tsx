@@ -39,7 +39,6 @@ const MySlide = () => {
       <Swiper
         ref={swiperRef}
         modules={[Pagination, Autoplay, EffectFade, Parallax]}
-        // direction={"horizontal"}
         centeredSlides={true}
         loop={true}
         parallax={true}
@@ -49,14 +48,11 @@ const MySlide = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          bulletClass: "w-2 h-2 rounded-lg bg-slate-500 inline-block relative mr-4 xl:mr-5 cursor-pointer",
+          bulletClass:
+            "w-2 h-2 rounded-lg transition-all bg-slate-300 inline-block relative mr-4 xl:mr-5 cursor-pointer",
           bulletActiveClass: "!bg-white w-5",
           clickable: true,
           el: ".swiper-pagination",
-          renderBullet: function (index: any, className: string) {
-            // return '<div class="flex justify-end pr-5"><span class="' + className + '"></span><div/ >';
-            return '<span class="' + className + '"></span>';
-          },
         }}
         className="w-full relative"
       >

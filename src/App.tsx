@@ -1,10 +1,10 @@
 // import "./App.css";
-import Menu from "./Components/Menu";
-import Notice from "./Components/Notice";
+import Menu from "./Components/Menu/Menu";
+import Notice from "./Components/Menu/Notice";
 import MySlide from "./Components/MySlide";
 import ProductPage from "./Components/ProductPage";
 import Card from "./Components/Card";
-// import CompanyGuide from "./Components/CompanyGuide";
+import CompanyGuide from "./Components/CompanyGuide";
 import Collabo from "./Components/Collabo";
 import MandD from "./Components/MandD";
 import ShippingDetail from "./Components/ShippingDetail";
@@ -22,7 +22,7 @@ function App() {
       <MySlide></MySlide>
       <ProductPage></ProductPage>
       <Card></Card>
-      {/* <CompanyGuide></CompanyGuide> */}
+      <CompanyGuide></CompanyGuide>
       <Collabo></Collabo>
       <MandD></MandD>
       <ShippingDetail></ShippingDetail>

@@ -2,15 +2,13 @@
 
 const MandDContents = () => {
   return (
-    <div className="flex justify-center flex-col gap-6 flex-1">
-      <div className="text-4xl text-[#4c4c4c] w-[95%] pl-[20%] pt-[1%]">
-        Get The Most Out Of Your Sound with M&D Connect
-      </div>
-      <div className="flex flex-col items-center w-[95%] pl-[20%] text-sm">
+    <div className="flex justify-center flex-col gap-6 flex-1 w-full">
+      <div className="text-4xl text-[#4c4c4c] w-[95%] pt-[1%]">Get The Most Out Of Your Sound with M&D Connect</div>
+      <div className="flex flex-col items-center w-[95%] text-sm">
         The M&D Connect App lets you download firmware updates, adjust settings, and change default preferences for your
         headset, all from your mobile device
       </div>
-      <button className="text-white bg-[#4c4c4c] w-40 h-14 text-center items-center ml-[20%] hover:bg-[#989898]">
+      <button className="text-white bg-[#4c4c4c] w-40 h-14 text-center items-center hover:bg-[#989898]">
         Learn More
       </button>
       {/* <Button className="text-white bg-[#4c4c4c] w-40 h-14 text-center items-center ml-[20%] hover:bg-[#989898]"></Button> */}
