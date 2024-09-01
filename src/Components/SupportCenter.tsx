@@ -8,7 +8,7 @@ const SupportCenter = () => {
       <div className="lg:flex flex-1">
         <ImageBox cardImg={earphone}></ImageBox>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-center pl-[2%]">
         <MandDContents></MandDContents>
       </div>
     </div>
