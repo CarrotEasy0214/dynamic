@@ -15,20 +15,70 @@ import MW09S5 from "../img/color/MW09S5-Swatch_V2.png";
 
 import { useState } from "react";
 
+const Colors = [
+  {
+    MW09Colors: {
+      MW09Black: MW09Black,
+      MW09Blue: MW09Blue,
+      MW09G3: MW09G3,
+      MW09GD: MW09GD,
+      MW09GR: MW09GR,
+      MW09S5: MW09S5,
+    },
+  },
+];
+
+const Color = ({
+  MW09Black,
+  MW09Blue,
+  MW09G3,
+  MW09GD,
+  MW09GR,
+  MW09S5,
+}: {
+  MW09Black: string | undefined;
+  MW09Blue: string | undefined;
+  MW09G3: string | undefined;
+  MW09GD: string | undefined;
+  MW09GR: string | undefined;
+  MW09S5: string | undefined;
+}): JSX.Element => {
+  return (
+    <div className="px-[15%] pt-[2%] flex gap-3">
+      <img src={MW09Black} className="w-5 h-5"></img>
+      <img src={MW09Blue} className="w-5 h-5"></img>
+      <img src={MW09G3} className="w-5 h-5"></img>
+      <img src={MW09GD} className="w-5 h-5"></img>
+      <img src={MW09GR} className="w-5 h-5"></img>
+      <img src={MW09S5} className="w-5 h-5"></img>
+    </div>
+  );
+};
+
 const Item = ({
   title,
   content,
   price,
   image,
   hImage,
-  color,
-}: {
+}: // mwblck,
+// mwblue,
+// mwg3,
+// mwgd,
+// mwgr,
+// mws5,
+{
   title: string | number;
   content: string;
   price: string | number;
   image: string | undefined;
   hImage: string | undefined;
-  color: string[] | undefined;
+  // mwblck: string | undefined;
+  // mwblue: string | undefined;
+  // mwg3: string | undefined;
+  // mwgd: string | undefined;
+  // mwgr: string | undefined;
+  // mws5: string | undefined;
 }): JSX.Element => {
   const [isListHover, setIsListHover] = useState(false);
   return (
@@ -44,12 +94,37 @@ const Item = ({
         <div className="text-slate-600">
           <div className="flex justify-between pt-[10%] px-[15%] text-slate-600">
             <div className="text-xl font-bold">{title}</div>
-            <div className="flex items-end justify-center font-bold">
-              {price}
-            </div>
+            <div className="flex items-end justify-center font-bold">{price}</div>
           </div>
           <div className="px-[15%] pt-[2%]">{content}</div>
-          <div className="w-5 h-5">{color}</div>
+          {/* <div className="flex">
+            <div className="w-5 h-5">{MW09Black}</div>
+            <div className="w-5 h-5">{MW09Blue}</div>
+            <div className="w-5 h-5">{MW09G3}</div>
+            <div className="w-5 h-5">{MW09GD}</div>
+            <div className="w-5 h-5">{MW09GR}</div>
+            <div className="w-5 h-5">{MW09S5}</div>
+          </div> */}
+
+          {/* <div className="px-[15%] pt-[2%] flex gap-3">
+            <img src={mwblck} className="w-5 h-5"></img>
+            <img src={mwblue} className="w-5 h-5"></img>
+            <img src={mwg3} className="w-5 h-5"></img>
+            <img src={mwgd} className="w-5 h-5"></img>
+            <img src={mwgr} className="w-5 h-5"></img>
+            <img src={mws5} className="w-5 h-5"></img>
+          </div> */}
+          {Colors.map((props) => (
+            <Color
+              MW09Black={props.MW09Colors.MW09Black}
+              MW09Blue={props.MW09Colors.MW09Blue}
+              MW09G3={props.MW09Colors.MW09G3}
+              MW09GD={props.MW09Colors.MW09GD}
+              MW09GR={props.MW09Colors.MW09GR}
+              MW09S5={props.MW09Colors.MW09S5}
+            ></Color>
+          ))}
+          {/* <img src={MW09Black} alt="" /> */}
         </div>
       </div>
     </div>
@@ -64,7 +139,12 @@ const Items = [
       price: "From $ 349.00",
       image: product1,
       hImage: products1,
-      color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
+      mwblck: MW09Black,
+      mwblue: MW09Blue,
+      mwg3: MW09G3,
+      mwgd: MW09GD,
+      mwgr: MW09GR,
+      mws5: MW09S5,
     },
   },
   {
@@ -74,7 +154,13 @@ const Items = [
       price: "From $ 448.00",
       image: product2,
       hImage: products2,
-      color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
+      mwblck: MW09Black,
+      mwblue: MW09Blue,
+      mwg3: MW09G3,
+      mwgd: MW09GD,
+      mwgr: MW09GR,
+      mws5: MW09S5,
+      // color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
     },
   },
   {
@@ -84,7 +170,13 @@ const Items = [
       price: "From $ 549.00",
       image: product3,
       hImage: products3,
-      color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
+      mwblck: MW09Black,
+      mwblue: MW09Blue,
+      mwg3: MW09G3,
+      mwgd: MW09GD,
+      mwgr: MW09GR,
+      mws5: MW09S5,
+      // color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
     },
   },
   {
@@ -94,7 +186,13 @@ const Items = [
       price: "From $ 649.00",
       image: product4,
       hImage: products4,
-      color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
+      mwblck: MW09Black,
+      mwblue: MW09Blue,
+      mwg3: MW09G3,
+      mwgd: MW09GD,
+      mwgr: MW09GR,
+      mws5: MW09S5,
+      // color: [MW09Black, MW09Blue, MW09G3, MW09GD, MW09GR, MW09S5],
     },
   },
 ];
@@ -109,7 +207,12 @@ const Test = (): JSX.Element => {
           price={props.ItemData.price}
           image={props.ItemData.image}
           hImage={props.ItemData.hImage}
-          color={props.ItemData.color}
+          // mwblck={props.ItemData.mwblck}
+          // mwblue={props.ItemData.mwblue}
+          // mwg3={props.ItemData.mwg3}
+          // mwgd={props.ItemData.mwgd}
+          // mwgr={props.ItemData.mwgr}
+          // mws5={props.ItemData.mws5}
         />
       ))}
     </div>
