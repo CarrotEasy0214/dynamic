@@ -45,12 +45,12 @@ const Color = ({
 }): JSX.Element => {
   return (
     <div className="px-[15%] pt-[2%] flex gap-3">
-      <img src={MW09Black} className="w-5 h-5"></img>
-      <img src={MW09Blue} className="w-5 h-5"></img>
-      <img src={MW09G3} className="w-5 h-5"></img>
-      <img src={MW09GD} className="w-5 h-5"></img>
-      <img src={MW09GR} className="w-5 h-5"></img>
-      <img src={MW09S5} className="w-5 h-5"></img>
+      <img src={MW09Black} alt="" className="w-5 h-5"></img>
+      <img src={MW09Blue} alt="" className="w-5 h-5"></img>
+      <img src={MW09G3} alt="" className="w-5 h-5"></img>
+      <img src={MW09GD} alt="" className="w-5 h-5"></img>
+      <img src={MW09GR} alt="" className="w-5 h-5"></img>
+      <img src={MW09S5} alt="" className="w-5 h-5"></img>
     </div>
   );
 };
